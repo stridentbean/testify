@@ -1,10 +1,10 @@
 #!/bin/bash
 if [ "$(uname)" == "Darwin" ]; then
-  echo "alias testify='. "`pwd`"/testify.sh'" >> ~/.bash_profile
-  echo "alias testify='. "`pwd`"/testify.sh'" >> ~/.zshrc
-  echo "alias testify='. "`pwd`"/testify.sh'" >> ~/.bashrc
+  echo "alias testify='. "`pwd`"/testify.sh "`pwd`"'" >> ~/.bash_profile
+  echo "alias testify='. "`pwd`"/testify.sh "`pwd`"'" >> ~/.zshrc
+  echo "alias testify='. "`pwd`"/testify.sh "`pwd`"'" >> ~/.bashrc
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
-  echo "Put something like this in your $HOME/.bashrc or $HOME/.zshrc: '. /path/to/z.sh'"
+  echo "Put something like this in your $HOME/.bashrc or $HOME/.zshrc: '. /path/to/testify.sh'"
 elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ]; then
-  echo ". "`pwd`"/testify.sh" >> ~/.bash_profile
+  echo "Put something like this in your $HOME/.bashrc or $HOME/.zshrc: '. /path/to/testify.sh'"
 fi
