@@ -1,10 +1,10 @@
-describe('aTestingFile.js', function() {
+describe('testFile', function() {
 
   beforeEach(function() {
     //before each test
   });
 
   it('should be correct', function() {
-    expect(true).to.equal(true);
+    expect(false).to.equal(true);
   });
 });
