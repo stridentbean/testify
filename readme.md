@@ -1,6 +1,8 @@
 Installation:
 
-Run "bash install.sh" from your Mac terminal.
+  1) Clone this git repository to your computer.
+  2) Navigate to the repository from the command line.
+  3) Run "bash install.sh" from your terminal.
 
 Usage:
 
