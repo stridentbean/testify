@@ -10,7 +10,7 @@ do
   cp $1"/starterFiles/starterSpecFile.js" `pwd`"/tests/test"$fileWithStartingCapital
   
   # Update Test File Describe
-  sed 's/testFile/'$fileWithStartingCapital'/g' `pwd`"/tests/test"$fileWithStartingCapital > `pwd`"/tests/test"$fileWithStartingCapital".tmp"
+  sed 's/testFile/'$file'/g' `pwd`"/tests/test"$file > `pwd`"/tests/test"$fileWithStartingCapital".tmp"
   mv `pwd`"/tests/test"$fileWithStartingCapital".tmp" `pwd`"/tests/test"$fileWithStartingCapital
 
 done

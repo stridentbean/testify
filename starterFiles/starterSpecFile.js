@@ -3,7 +3,7 @@ var should = require('chai').should();
 
 /*
   Make sure to include the modules in each of your test files. See the foloowing for an example
-  module = module || {};
+  var module = module || {};
   module.exports = {};
 */
 
